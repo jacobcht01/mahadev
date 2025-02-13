@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- place favicon.png in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <title>Daily Fantasy Sport</title>
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendors/slick/css/slick.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <!-- ==== css dependencies end ==== -->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .head-color {
+    color: #e8c35e;
+    background: -webkit-linear-gradient(top, #F4E1A6 45%, #C29C5C 48%, #ffeebe 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 35px #4d0148);
+}
+.whats-app-btn a {
+    position: fixed;
+    z-index: 9;
+    /* margin-top: 31rem; */
+    top: 80%;
+    right: 15px;
+}
+.contact-page {
+    padding-bottom: 60px;
+    background: url(https://365gaming.in/images/contact-bg-image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.section {
+    padding-top: 80px;
+}
+ 
+.heading {
+    margin-bottom: 60px;
+}
+.heading h2 {
+    font-size: 36px;
+    position: relative;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
+    background: -webkit-linear-gradient(#ffd370 0%, #f7ad07 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    z-index: 0;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    cursor: auto;
+    letter-spacing: -1px;
+}
+.location-icon i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 100px;
+    font-size: 24px;
+    background: linear-gradient(to bottom, #ffd679 30%, #f7ac03 70%);
+    filter: drop-shadow(0 0px 20px rgba(255, 214, 121, 0.3));
+    box-shadow: 0px 0px 2px 1px rgba(247, 172, 4, 0.8);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-bottom: 60px;
+    color: #fff;
+}
+.location-txt {
+    padding-right: 130px;
+}
+.location-txt span {
+    line-height: 26px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.contact-page input {
+    height: 50px;
+}
+.contact-page .form-group textarea, .contact-page input {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #ddd !important;
+    border-radius: 0;
+    background: transparent;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.contact-page .form-group textarea {
+    height: 150px;
+    padding-top: 10px;
+    color: #fff;
+    resize: none;
+}
+.contact-page input {
+    height: 50px;
+}
+
+.contact-page .form-group textarea, .contact-page input {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #ddd !important;
+    border-radius: 0;
+    background: transparent;
+    padding-left: 20px;
+    font-family: "Nunito", sans-serif;
+}
+.faq-btn {
+    border-radius: 0 !important;
+    width: 100%;
+}
+.casino-btn a {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: top;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #fefefe;
+    font-weight: 400;
+    font-family: "Anton";
+    padding: 13px 30px;
+    border-radius: 35px;
+    text-transform: capitalize;
+    -webkit-transition: all ease 0.9s;
+    -moz-transition: all ease 0.9s;
+    -ms-transition: all ease 0.9s;
+    -o-transition: all ease 0.9s;
+    transition: all ease 0.9s;
+    text-shadow: 5px 4px 0px rgba(0, 0, 0, .1);
+    background: linear-gradient(to bottom, #ffd679 30%, #f7ac03 70%);
+    filter: drop-shadow(0 0px 20px rgba(101, 40, 193, 0.5));
+    box-shadow: 0px 0px 2px 1px rgba(247, 172, 4, 0.8);
+}
+.contact-page .casino-btn a {
+    filter: drop-shadow(0 0px 20px rgba(255, 214, 121, 0.3));
+}
+@media (max-width:575px){
+    .location-txt {
+    padding-right: 10px;
+}
+}
+    </style>
+
+
+</head>
+
+<body class="dark-mode"> 
+    <div class="whats-app-btn">
+    <a href="https://wa.link/ix2xpz" title="click to open whatsapp chat">
+    <img src="assets/images/whatsapp.png" width="70px" alt="">
+    </a>
+    </div>
+    <!-- ==== header section start ==== -->
+    <header id="header">
+       
+        <nav>
+             <img src="assets/images/logo.png" alt="" class="logo">
+            <ul class="navlinks">
+                <li class="items"><a href="index.html">Home</a></li>
+                <li class="items"><a href="about.html">About Us</a></li>
+                <li class="items"><a href="services.html">Service</a></li>
+                <li class="items"><a href="contact.html">Contact Us</a></li>
+                
+                <li onclick="showSidebar()"><a href="contact.html#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()" id="close"><a href="contact.html#"><i class="fa fa-close"></i></a></li>
+                 <li  ><a href="index.html">Home</a></li>
+                <li  ><a href="about.html">About Us</a></li>
+                <li  ><a href="services.html">Service</a></li>
+                <li  ><a href="contact.html">Contact Us</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+    <!--<header class="header">-->
+    <!--    <nav class="nav">-->
+    <!--        <div class="container">-->
+    <!--            <div class="row">-->
+    <!--                <div class="col-lg-12">-->
+    <!--                    <div class="nav__content">-->
+    <!--                        <div class="nav__logo">-->
+    <!--                            <a href="index.html">-->
+    <!--                                <img src="assets/images/logo.png" width="150px" alt="Logo">-->
+    <!--                            </a>-->
+    <!--                        </div>-->
+    <!--                        <div class="nav__menu">-->
+    <!--                            <div class="nav__menu-logo d-flex d-xl-none">-->
+    <!--                                <a href="index.html" class="text-center">-->
+    <!--                                    <img src="assets/images/logo.png" width="120px" alt="Logo">-->
+    <!--                                </a>-->
+    <!--                                <a href="javascript:void(0)" class="nav__menu-close">-->
+    <!--                                    <i class="fa-solid fa-xmark"></i>-->
+    <!--                                </a>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </nav>-->
+    <!--    <div class="backdrop"></div>-->
+    <!--</header>-->
+    <!-- ==== #header section end ==== -->
+
+   
+    
+    <!-- ==== work section start ==== -->
+    <!-- ==== overview section start ==== -->
+   <section id="contact-page" class="contact-page section">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h2>Contact us</h2>
+                        <img src="assets/images/heading-border-effect.png" class="img-fluid" alt="effect">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-3">
+                                    <div class="location-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-9">
+                                    <div class="location-txt">
+                                        <span>Palli Hill, Taredo, Mumbai Pin Code : 400026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-3">
+                                    <div class="location-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-9">
+                                    <div class="location-txt">
+                                        <span>+91 78698 50783</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-3 col-3">
+                                    <div class="location-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-9">
+                                    <div class="location-txt">
+                                        <span>yshubham@goldenexchub.net</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="heading">
+                        <h2>Get in touch</h2>
+                        <img src="assets/images/heading-border-effect.png" class="img-fluid" alt="effect">
+                    </div>
+                    <div class="faq-form">
+
+                        <form>
+
+                            <div class="form-group col-sm-12">
+                                <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <input type="text" class="form-control" name="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group col-sm-12">
+
+                                <textarea name="meassage" placeholder="Enter Comments"></textarea>
+
+                            </div>
+                            <div class="casino-btn col-sm-12">
+                                <a href="contact.html#" class="btn-4 yellow-btn faq-btn">send</a></div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==== #overview section end ==== -->
+
+    <!-- ==== #work section end ==== -->
+
+   
+   
+
+    
+
+    
+
+    
+    <section id="sticky_footer">
+        <a href="https://wa.link/ix2xpz">click here to register</a>
+    </section>
+    <!-- ==== footer section start ==== -->
+    <footer class="footer dark-bg position-relative">
+        <div class="container">
+            <div class="row section-space-top">
+                <div class="col-lg-4">
+                     <div>
+                         <h5 class="head-color">About Daily Fantasy Sport</h5>
+                         <br>
+                         <p>Affordable & Reliable ID Since 2010. We are Providing Genuine & Authentic ID in Just 2 Min. Get Instant Approval.</p>
+                     </div>
+                </div>
+                <div class="col-lg-4">
+                    <div>
+                        <h5 class="head-color">Get In Touch With Customer Care</h5>
+                        <br>
+                        <p>For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here To Help You 24/7 With Our Online Services.</p>
+                    </div>
+               </div>
+               <div class="col-lg-4">
+                    <div>
+                        <h5 class="head-color">Security Info</h5>
+                      
+                        <ul>
+                            <li><a href="about.html"><i class="fa fa-angle-right"></i>  About Us</a></li>
+                            <li><a href="contact.html"><i class="fa fa-angle-right"></i>  Contact Us</a></li>
+                            <li><a href="privacy-policy.html"><i class="fa fa-angle-right"></i>  Privacy Policy</a></li>
+                             <li><a href="terms-conditions.html"><i class="fa fa-angle-right"></i>  Terms & Conditions</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                
+                 
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <div class="footer__copyright">
+                        <p style="    font-size: 14px;">Disclaimer:- This Website is only for 18+ users. If you are from Telangana, Orissa, Assam, Sikkim, and Nagaland Please leave the website immediately. Be aware of fraudsters, we only deal via WhatsApp. No Real Money Involvement</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__thumbs">
+            <img src="assets/images/footer/blue-circle.png" alt="Image" class="blue-circle">
+            <img src="assets/images/footer/cyan-circle.png" alt="Image" class="cyan-circle">
+            <img src="assets/images/footer/violet-ring.png" alt="Image" class="violet-ring">
+            <img src="assets/images/footer/violet-circle.png" alt="Image" class="violet-circle">
+            <img src="assets/images/footer/yellow-circle.png" alt="Image" class="yellow-circle">
+            <img src="assets/images/footer/cyan-ring.png" alt="Image" class="cyan-ring">
+            <img src="assets/images/footer/blue-ring.png" alt="Image" class="blue-ring">
+        </div>
+    </footer>
+    <!-- ==== #footer section end ==== -->
+
+    <!-- ==== scroll bottom to top ==== -->
+    <a href="javascript:void(0)" class="scrollToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- ==== js dependencies start ==== -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/slick/js/slick.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+    <!-- ==== js dependencies end ==== -->
+
+    <!-- plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+<script>
+    function showSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'flex';
+    setTimeout(() => {
+        sidebar.style.transform = 'translateX(0)'; 
+    }, 10);
+}
+
+function closeSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.transform = 'translateX(100%)'; 
+    setTimeout(() => {
+        sidebar.style.display = 'none';
+    }, 300);
+}
+</script>
+</body>
+
+</html>
